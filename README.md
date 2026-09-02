@@ -106,6 +106,11 @@ R1 的比赛任务可以归纳为四个主要动作：
 
 这组任务要求 R1 同时具备可靠抓取、稳定对接、狭窄空间通过、多高度取放和协同举升能力。
 
+<!-- VIDEO_SECTION -->
+## 比赛视频
+
+[观看 R1 小组赛视频：西华师范大学（蓝）vs 宁波工程学院（红）](https://www.bilibili.com/video/BV1jUNB6QEiM/)
+
 <!-- MECHANISM_MAPPING -->
 <!-- CONFIRMED_ACTION_MAPPING -->
 <!-- R1 mechanism mapping -->
@@ -199,11 +204,6 @@ R1 的比赛任务可以归纳为四个主要动作：
 ![R1 抬升承托平台与导向结构展示](assets/r1-lift-module.png)
 
 该图展示 R2 承托平台、导向结构、连接件和板材框架，用于说明 R1 协同举升 R2 约 50-60 cm 的机械基础。
-
-<!-- VIDEO_SECTION -->
-## 比赛视频
-
-[观看 R1 小组赛视频：西华师范大学（蓝）vs 宁波工程学院（红）](https://www.bilibili.com/video/BV1jUNB6QEiM/)
 
 ## 项目文档
 

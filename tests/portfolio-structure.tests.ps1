@@ -69,6 +69,8 @@ Assert-Contains 'docs/project-story.md' '<!-- KEY_ACTIONS -->'
 Assert-Contains 'docs/project-story.md' '<!-- CONFIRMED_ACTION_MAPPING -->'
 Assert-Contains 'docs/project-story.md' 'KFS'
 Assert-Contains 'docs/project-story.md' '<!-- MECHANISM_MAPPING -->'
+Assert-Contains 'docs/project-story.md' '<!-- VIDEO_SECTION -->'
+Assert-Contains 'docs/project-story.md' 'https://www.bilibili.com/video/BV1jUNB6QEiM/'
 Assert-Contains 'docs/publication-boundary.md' 'SolidWorks'
 
 $ignore = Get-Content -Raw -LiteralPath (Join-Path $root '.gitignore')
