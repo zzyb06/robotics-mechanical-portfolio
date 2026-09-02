@@ -1,0 +1,39 @@
+# SolidWorks source files - keep competition CAD private
+*.SLDASM
+*.SLDPRT
+*.SLDDRW
+*.sldasm
+*.sldprt
+*.slddrw
+
+# Neutral CAD exchange files
+*.STEP
+*.STP
+*.step
+*.stp
+
+# Private project documents and archives
+*.doc
+*.docx
+*.pdf
+*.zip
+*.7z
+*.rar
+
+# CAD and editor temporary files
+~$*
+*.bak
+*.tmp
+*.swp
+*.lock
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Generated output
+dist/
+build/
+out/
+tmp/
