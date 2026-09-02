@@ -14,6 +14,7 @@ r1-cad-assembly.png
 r1-manufacturing.png
 r1-assembly-process.png
 r1-demo.mp4
+volleyball-robot-overview.jpeg
 ```
 
 ## 补图顺序
@@ -26,6 +27,7 @@ r1-demo.mp4
 6. `r1-cad-assembly.png`：SolidWorks 总装截图
 7. `r1-manufacturing.png`：激光切割、钣金折弯或 3D 打印件
 8. `r1-assembly-process.png`：铝型材、铝方管和实物装配
+9. `volleyball-robot-overview.jpeg`：2026 ROBOCON 排球机器人实物总装图，当前用于展示排球机器人整体结构和发球机构安装区域
 
 ## 图片要求
 
