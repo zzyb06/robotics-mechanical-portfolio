@@ -40,7 +40,7 @@ foreach ($text in @(
     }
 }
 
-$smartPlus = [regex]::Match($readme, '(?s)### 浙江省大学生工程实践与创新能力大赛「智能\+」.*?(?=### |## |$)').Value
+$smartPlus = [regex]::Match($readme, '(?s)### 第十二届浙江省大学生工程实践与创新能力大赛「智能\+」垃圾分类.*?(?=### |## |$)').Value
 if (-not $smartPlus) {
     throw 'Could not isolate the 智能+ project section'
 }

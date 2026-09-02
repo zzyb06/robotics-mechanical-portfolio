@@ -17,6 +17,8 @@ $required = @(
     '末端执行器',
     'ROBOCON',
     '国家级大学生创新创业项目',
+    '第十二届浙江省大学生工程实践与创新能力大赛「智能+」垃圾分类',
+    'Core-XY',
     'https://github.com/zzyb06/robotics-mechanical-portfolio',
     '一等奖',
     '二等奖',

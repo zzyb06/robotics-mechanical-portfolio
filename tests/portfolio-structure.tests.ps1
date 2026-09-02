@@ -1,17 +1,22 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
 $requiredFiles = @(
     'README.md',
     '.gitignore',
     'docs/project-story.md',
+    'docs/smart-garbage-sorting.md',
     'docs/publication-boundary.md',
     'assets/README.md',
     'assets/r1-overview.png',
     'assets/r1-gripper.png',
     'assets/r1-chassis.png',
     'assets/r1-arm.png',
-    'assets/r1-lift-module.png'
+    'assets/r1-lift-module.png',
+    'assets/smart-garbage-sorter-overview.jpeg',
+    'assets/smart-garbage-sorter-cad.png',
+    'assets/smart-garbage-sorter-gripper.jpeg',
+    'assets/smart-garbage-sorter-internal.jpeg'
 )
 
 foreach ($relativePath in $requiredFiles) {
@@ -45,6 +50,8 @@ Assert-Contains 'README.md' '<!-- ARM_EVIDENCE -->'
 Assert-Contains 'README.md' 'assets/r1-arm.png'
 Assert-Contains 'README.md' '<!-- LIFT_EVIDENCE -->'
 Assert-Contains 'README.md' 'assets/r1-lift-module.png'
+Assert-Contains 'README.md' 'docs/smart-garbage-sorting.md'
+Assert-Contains 'README.md' '第十二届浙江省大学生工程实践与创新能力大赛「智能+」垃圾分类'
 Assert-Contains 'README.md' '<!-- VIDEO_SECTION -->'
 Assert-Contains 'README.md' 'https://www.bilibili.com/video/BV1jUNB6QEiM/'
 Assert-Contains 'README.md' '<!-- KEY_ACTIONS -->'
@@ -72,6 +79,20 @@ Assert-Contains 'docs/project-story.md' '<!-- MECHANISM_MAPPING -->'
 Assert-Contains 'docs/project-story.md' '<!-- VIDEO_SECTION -->'
 Assert-Contains 'docs/project-story.md' 'https://www.bilibili.com/video/BV1jUNB6QEiM/'
 Assert-Contains 'docs/publication-boundary.md' 'SolidWorks'
+
+Assert-Contains 'docs/smart-garbage-sorting.md' '# 第十二届浙江省大学生工程实践与创新能力大赛「智能+」垃圾分类'
+Assert-Contains 'docs/smart-garbage-sorting.md' 'Core-XY'
+Assert-Contains 'docs/smart-garbage-sorting.md' '柔性夹爪'
+Assert-Contains 'docs/smart-garbage-sorting.md' 'SolidWorks'
+Assert-Contains 'docs/smart-garbage-sorting.md' '省级银奖'
+Assert-Contains 'docs/smart-garbage-sorting.md' '../assets/smart-garbage-sorter-overview.jpeg'
+Assert-Contains 'docs/smart-garbage-sorting.md' '../assets/smart-garbage-sorter-cad.png'
+Assert-Contains 'docs/smart-garbage-sorting.md' '../assets/smart-garbage-sorter-gripper.jpeg'
+
+$smartPlusPage = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $root 'docs/smart-garbage-sorting.md')
+if ($smartPlusPage -match '排球机器人|发球机构|武林探秘') {
+    throw 'The 智能+ page must not contain unrelated volleyball or 武林探秘 content'
+}
 
 $ignore = Get-Content -Raw -LiteralPath (Join-Path $root '.gitignore')
 foreach ($pattern in @('*.SLDASM', '*.SLDPRT', '*.SLDDRW', '*.STEP', '*.STP', '*.docx', '*.pdf', '*.zip')) {

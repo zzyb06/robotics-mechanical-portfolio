@@ -36,3 +36,10 @@ volleyball-robot-overview.jpeg
 - 一张图尽量只表达一个结构重点
 - 每张图在 README 或项目文档中配一段说明
 - 视频可先上传到 GitHub Releases、网盘或公开视频平台，再把链接放入 README
+
+## 「智能+」垃圾分类项目素材
+
+- `smart-garbage-sorter-overview.jpeg`：生活智能垃圾分类装置实物总装图
+- `smart-garbage-sorter-cad.png`：生活智能垃圾分类装置 SolidWorks 总体模型
+- `smart-garbage-sorter-gripper.jpeg`：Core-XY 平台与 TPU 柔性夹爪
+- `smart-garbage-sorter-internal.jpeg`：装置内部结构与分类模块
